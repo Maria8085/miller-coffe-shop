@@ -1,0 +1,75 @@
+header {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 122px;
+  .logo {
+    width: 260px;
+    height: 116px;
+    .logoimg {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    a {
+      font-size: 25px;
+      text-decoration: none;
+      color: #000000;
+      padding-right: 100px;
+    }
+    :last-of-type {
+      padding: 0;
+    }
+  }
+
+  .search {
+    height: 59px;
+    padding: 14px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+    border-radius: 30px;
+    display: flex;
+    flex-grow: 1;
+    margin: 0 25px;
+    .search-svg {
+      width: 35px;
+      height: 35px;
+      margin-right: 20px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .search-input {
+      border: none;
+      font-size: 20px;
+      outline: 0;
+      ::placeholder {
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  .headericons {
+    display: flex;
+    .icon {
+      width: 35px;
+      height: 35px;
+      margin-left: 50px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// :hover {
+//   box-shadow: 0px 5px 20px rgba(157, 157, 157, 0.25);
+// }
