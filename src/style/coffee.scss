@@ -1,0 +1,24 @@
+.coffee {
+  position: relative;
+  .grain {
+    position: absolute;
+    width: 756.54px;
+    height: 521.4px;
+    background-image: url(../image/grainCoffee.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    transform: rotate(157.31deg);
+  }
+  .cup {
+    position: absolute;
+    width: 744px;
+    height: 496px;
+    top: -55px;
+    left: 30px;
+    background-image: url(../image/cupOfCoffee.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,80 @@
+footer {
+  padding: 159px 122px 50px;
+  position: relative;
+  h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 60px;
+    width: 757px;
+  }
+  .agreement {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 44px;
+    span {
+      color: #f9b300;
+    }
+  }
+  .footerImage {
+    position: absolute;
+    right: 665px;
+    top: -50px;
+    .grain {
+      width: 694.18px;
+      height: 478.42px;
+      transform: rotate(163.23deg);
+    }
+    .cup {
+      width: 682px;
+      height: 455px;
+    }
+  }
+  .footerinput {
+    position: relative;
+    input {
+      border: none;
+      font-size: 20px;
+      outline: 0;
+      width: 1100px;
+      height: 80px;
+      background: #f3f3f3;
+      border-radius: 40px;
+      padding: 24px 60px;
+    }
+    ::placeholder {
+      color: #c9c9c9;
+    }
+    button {
+      position: absolute;
+      width: 260px;
+      height: 80px;
+      background-color: #f9b300;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      color: #ffffff;
+      border-radius: 40px;
+      border: none;
+      right: 0;
+    }
+  }
+  .footenMenu {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    .navigation {
+      justify-content: flex-end;
+    }
+  }
+}

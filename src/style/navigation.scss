@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #000000;
+    padding-right: 100px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  :last-of-type {
+    padding: 0;
+  }
+}
