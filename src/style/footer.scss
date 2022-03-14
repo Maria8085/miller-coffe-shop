@@ -19,8 +19,12 @@ footer {
     font-weight: 500;
     font-size: 16px;
     margin-top: 44px;
-    span {
+    a {
       color: #f9b300;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   .footerImage {
@@ -39,6 +43,7 @@ footer {
   }
   .footerinput {
     position: relative;
+    height: 80px;
     input {
       border: none;
       font-size: 20px;
@@ -47,23 +52,29 @@ footer {
       height: 80px;
       background: #f3f3f3;
       border-radius: 40px;
-      padding: 24px 60px;
+      padding: 24px 320px 24px 60px;
+      &::placeholder {
+        color: #c9c9c9;
+      }
     }
-    ::placeholder {
-      color: #c9c9c9;
-    }
-    button {
+
+    .footerButton {
       position: absolute;
       width: 260px;
       height: 80px;
-      background-color: #f9b300;
-      font-style: normal;
-      font-weight: 700;
       font-size: 25px;
-      color: #ffffff;
       border-radius: 40px;
-      border: none;
       right: 0;
+      span {
+        transition: ease-out 0.15s;
+      }
+      &:active {
+        transform: unset;
+        span {
+          display: inline-block;
+          transform: scale(0.95);
+        }
+      }
     }
   }
   .footenMenu {

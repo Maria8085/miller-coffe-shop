@@ -41,9 +41,14 @@ header {
       width: 35px;
       height: 35px;
       margin-left: 50px;
-      img {
-        width: 100%;
-        object-fit: cover;
+      transition: ease-out 0.15s;
+      cursor: pointer;
+      &:hover svg path {
+        stroke: #ffffff;
+      }
+      &:active {
+        opacity: 0.5;
+        transform: scale(0.8);
       }
     }
   }
