@@ -1,44 +1,53 @@
 .background {
   position: absolute;
-  top: -255px;
-  right: -670px;
-  width: 1366px;
-  height: 1689.93px;
+  right: -305px;
+  top: -45px;
+  width: 453px;
+  height: 561px;
   background-image: url(../image/fon.jpg);
   z-index: -1;
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
+  transform: rotate(-1.5deg);
 }
 
 .imageSlider {
   position: absolute;
-  right: 1020px;
-  top: 155px;
+  right: 274px;
+  top: 253px;
+  .coffee {
+    .grain {
+      width: 369.39px;
+      height: 254.58px;
+      top: -35px;
+      right: -386px;
+      transform: rotate(157deg);
+    }
+    .cup {
+      width: 363px;
+      height: 242px;
+    }
+  }
 }
 
 .sectionSlider {
-  min-height: 800px;
-  padding: 120px 122px;
+  padding: 60px 18px 35px;
   position: relative;
   h2 {
-    font-size: 80px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
+    font-size: 30px;
   }
   p {
-    font-size: 25px;
-    margin-bottom: 90px;
-    width: 658px;
+    margin-bottom: 220px;
+    width: 220px;
     font-style: normal;
     font-weight: 500;
+    font-size: 14px;
   }
 
   .sliderButton {
-    width: 400px;
-    height: 80px;
-    left: 122px;
-    top: 658px;
   }
 }
