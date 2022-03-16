@@ -1,8 +1,10 @@
 .navigation {
-  display: flex;
   display: none;
   flex-grow: 1;
   justify-content: center;
+  @include laptop {
+    display: flex;
+  }
   a {
     text-decoration: none;
     color: #000000;
@@ -12,6 +14,18 @@
     font-size: 12px;
     position: relative;
     transition: ease-out 0.15s;
+    @include tablet {
+      font-size: 25px;
+      margin-right: 60px;
+    }
+    @include laptop {
+      font-size: 18px;
+      margin-right: 66px;
+    }
+    @include desktop {
+      font-size: 25px;
+      margin-right: 100px;
+    }
     cursor: pointer;
     &::after {
       content: "";

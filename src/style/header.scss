@@ -7,6 +7,20 @@ header {
   padding: 0 18px;
   background-color: #ffffff;
   box-shadow: 0px 0px 20px rgba(157, 157, 157, 0.25);
+  @include tablet {
+    height: 143px;
+    padding: 0 36px;
+  }
+  @include laptop {
+    height: 113px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0 85px;
+  }
+  @include desktop {
+    height: 160px;
+    padding: 0 122px;
+  }
 
   //бургер
   .burger {
@@ -17,6 +31,13 @@ header {
     padding: 0;
     border: none;
     background-color: unset;
+    @include tablet {
+      width: 59px;
+      height: 30px;
+    }
+    @include laptop {
+      display: none;
+    }
   }
 
   .burger span,
@@ -29,9 +50,15 @@ header {
     margin: 0 auto;
     border-radius: 5px;
     left: 0;
+    @include tablet {
+      height: 4px;
+    }
   }
   .burger span {
     top: 6px;
+    @include tablet {
+      top: 13px;
+    }
   }
   .burger:after,
   .burger:before {
@@ -42,6 +69,9 @@ header {
   }
   .burger:before {
     top: -1px;
+    @include tablet {
+      top: 0;
+    }
   }
   //бургер
 
@@ -76,14 +106,41 @@ header {
   .headericons {
     display: flex;
     .icon {
-      width: 20px;
-      height: 20px;
+      width: 17px;
+      height: 17px;
       margin-left: 30px;
       transition: ease-out 0.15s;
       cursor: pointer;
+      @include tablet {
+        width: 34px;
+        height: 34px;
+        margin-left: 60px;
+      }
+      @include laptop {
+        width: 22px;
+        height: 22px;
+        margin-left: 40px;
+      }
+      @include desktop {
+        width: 31px;
+        height: 31px;
+        margin-left: 53px;
+      }
       svg {
         width: 20px;
         height: 20px;
+        @include tablet {
+          width: 34px;
+          height: 34px;
+        }
+        @include laptop {
+          width: 22px;
+          height: 22px;
+        }
+        @include desktop {
+          width: 31px;
+          height: 31px;
+        }
       }
       &:hover svg path {
         opacity: 0.8;

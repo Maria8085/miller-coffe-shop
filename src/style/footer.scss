@@ -1,21 +1,75 @@
-footer {
+.footer {
   padding: 300px 18px 50px;
   position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  @include tablet {
+    padding: 400px 34px 80px;
+  }
+  @include laptop {
+    padding: 104px 84px 70px;
+  }
+  @include desktop {
+    padding: 159px 122px 100px;
+  }
 
   .footerImage {
     position: absolute;
-    left: 20px;
-    top: 78px;
+    left: 32px;
+    top: 31px;
+    @include tablet {
+      left: 113px;
+      top: 14px;
+    }
+    @include laptop {
+      right: 481px;
+      top: -11px;
+      left: inherit;
+    }
+    @include desktop {
+      right: 665px;
+      top: -51px;
+    }
     .grain {
       width: 311.78px;
       height: 214.93px;
-      left: 12px;
-      top: -36px;
-      transform: rotate(163.23deg);
+      transform: rotate(163deg);
+      @include tablet {
+        width: 463.75px;
+        height: 319.83px;
+      }
+      @include laptop {
+        width: 491px;
+        height: 338px;
+      }
+      @include desktop {
+        width: 694.18px;
+        height: 478.42px;
+      }
     }
     .cup {
       width: 307px;
       height: 204px;
+      left: 17px;
+      top: -20px;
+      @include tablet {
+        width: 456px;
+        height: 303px;
+        left: 25px;
+        top: -30px;
+      }
+      @include laptop {
+        width: 483px;
+        height: 322px;
+        left: 27px;
+        top: -32px;
+      }
+      @include desktop {
+        width: 682px;
+        height: 455px;
+        left: 23px;
+        top: 4px;
+      }
     }
   }
 
@@ -24,14 +78,38 @@ footer {
     font-weight: 900;
     font-size: 20px;
     margin-bottom: 30px;
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    @include laptop {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+    @include desktop {
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
   }
   p {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     margin-bottom: 20px;
-    width: 316px;
     color: #222222;
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    @include laptop {
+      font-size: 18px;
+      margin-bottom: 39px;
+      width: 70%;
+    }
+    @include desktop {
+      font-size: 25px;
+      margin-bottom: 60px;
+    }
   }
   .agreement {
     font-style: normal;
@@ -39,6 +117,18 @@ footer {
     font-size: 10px;
     margin-top: 10px;
     margin-bottom: 60px;
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 100px;
+    }
+    @include laptop {
+      font-size: 12px;
+      margin-bottom: 138px;
+    }
+    @include desktop {
+      font-size: 16px;
+      margin-bottom: 189px;
+    }
     a {
       color: #f9b300;
       text-decoration: none;
@@ -48,30 +138,62 @@ footer {
     }
   }
   .footerinput {
+    position: relative;
     input {
       border: none;
+      font-family: "Gilroy";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
       outline: 0;
-      width: 340px;
+      width: 100%;
       height: 50px;
       background: #f3f3f3;
       border-radius: 5px;
       padding: 16px 30px;
       margin-bottom: 20px;
+
       &::placeholder {
         color: #c9c9c9;
+      }
+      @include tablet {
+        height: 70px;
+        font-size: 22px;
+        padding: 20px 70px;
+      }
+      @include laptop {
+        width: 779px;
+        height: 57px;
+        padding: 17px 200px 17px 40px;
+        font-size: 18px;
+        border-radius: 28px;
+        margin-bottom: 20px;
+      }
+      @include desktop {
+        width: 1100px;
+        height: 80px;
+        padding: 24px 320px 24px 60px;
+        font-size: 25px;
+        border-radius: 40px;
+        margin-bottom: 20px;
       }
     }
 
     .footerButton {
-      width: 340px;
-      height: 50px;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 18px;
-      border-radius: 5px;
+      @include tablet {
+      }
+      @include laptop {
+        width: 179px;
+        position: absolute;
+        border-radius: 28px;
+        right: 0;
+      }
+      @include desktop {
+        width: 260px;
+        position: absolute;
+        border-radius: 40px;
+        right: 0;
+      }
       span {
         transition: ease-out 0.15s;
       }
@@ -91,10 +213,21 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
+    @include laptop {
+      flex-direction: row;
+    }
     .navigation {
-      display: block;
       justify-content: flex-end;
       margin-bottom: 30px;
+      display: flex;
+      @include tablet {
+        margin-bottom: 60px;
+      }
+      @include laptop {
+        margin: 0;
+      }
+      @include desktop {
+      }
     }
   }
 }

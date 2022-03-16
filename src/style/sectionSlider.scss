@@ -1,7 +1,7 @@
 .background {
   position: absolute;
-  right: -305px;
-  top: -45px;
+  right: -315px;
+  top: -38px;
   width: 453px;
   height: 561px;
   background-image: url(../image/fon.jpg);
@@ -9,24 +9,65 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
-  transform: rotate(-1.5deg);
+  transform: rotate(8.46deg);
+  @include tablet {
+    width: 736px;
+    height: 912px;
+    transform: rotate(8.46deg);
+    right: -387px;
+    top: -77px;
+  }
+  @include laptop {
+    width: 968px;
+    height: 1197px;
+    transform: rotate(11deg);
+    right: -484px;
+    top: -276px;
+  }
+  @include desktop {
+    width: 1366px;
+    height: 1689.93px;
+    transform: rotate(10.63deg);
+    right: -683px;
+    top: -388px;
+  }
 }
 
 .imageSlider {
   position: absolute;
-  right: 274px;
-  top: 253px;
+  right: 259px;
+  top: 219px;
+  @include tablet {
+    right: 544px;
+    top: 340px;
+  }
+  @include laptop {
+    right: 735px;
+    top: 112px;
+  }
+  @include desktop {
+    right: 1037px;
+    top: 156px;
+  }
   .coffee {
     .grain {
-      width: 369.39px;
-      height: 254.58px;
-      top: -35px;
-      right: -386px;
-      transform: rotate(157deg);
+      transform: rotate(157.31deg);
     }
     .cup {
-      width: 363px;
-      height: 242px;
+      top: -22px;
+      left: 13px;
+      @include tablet {
+        top: -36px;
+        left: 20px;
+      }
+      @include laptop {
+        top: -36px;
+        left: 27px;
+      }
+      @include desktop {
+        top: -49px;
+        left: 39px;
+      }
     }
   }
 }
@@ -34,20 +75,66 @@
 .sectionSlider {
   padding: 60px 18px 35px;
   position: relative;
+  @include tablet {
+    padding: 130px 35px 35px;
+  }
+  @include laptop {
+    padding: 85px 86px 35px;
+  }
+  @include desktop {
+    padding: 120px 122px 35px;
+  }
   h2 {
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
+    @include tablet {
+      font-size: 50px;
+      margin-bottom: 80px;
+      width: 500px;
+    }
+    @include laptop {
+      width: 100%;
+      font-size: 56px;
+      margin-bottom: 40px;
+    }
+    @include desktop {
+      font-size: 80px;
+      margin-bottom: 60px;
+    }
   }
   p {
     margin-bottom: 220px;
-    width: 220px;
+    width: 70%;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    @include tablet {
+      font-size: 20px;
+      width: 50%;
+      margin-bottom: 400px;
+    }
+    @include laptop {
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
+    @include desktop {
+      font-size: 25px;
+      margin-bottom: 122px;
+    }
   }
 
   .sliderButton {
+    @include laptop {
+      width: 283px;
+      font-size: 21px;
+      margin-bottom: 201px;
+    }
+    @include desktop {
+      width: 400px;
+      font-size: 30px;
+      margin-bottom: 276px;
+    }
   }
 }

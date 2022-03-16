@@ -2,25 +2,47 @@
   position: relative;
   .grain {
     position: absolute;
-    width: 756.54px;
-    height: 521.4px;
+    width: 369.39px;
+    height: 254.58px;
     z-index: -1;
     background-image: url(../image/grainCoffee.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
     transform: rotate(157.31deg);
+    @include tablet {
+      width: 599.58px;
+      height: 413.23px;
+    }
+    @include laptop {
+      width: 535px;
+      height: 369px;
+    }
+    @include desktop {
+      width: 756.54px;
+      height: 521.4px;
+    }
   }
   .cup {
     position: absolute;
-    width: 744px;
-    height: 496px;
-    top: -55px;
-    left: 30px;
+    width: 363px;
+    height: 242px;
     z-index: -1;
     background-image: url(../image/cupOfCoffee.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+    @include tablet {
+      width: 589px;
+      height: 393px;
+    }
+    @include laptop {
+      width: 525px;
+      height: 350px;
+    }
+    @include desktop {
+      width: 744px;
+      height: 496px;
+    }
   }
 }

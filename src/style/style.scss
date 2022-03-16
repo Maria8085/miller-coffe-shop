@@ -1,4 +1,5 @@
 @import "./font/stylesheet.css";
+@import "mixins.scss";
 @import "header.scss";
 @import "sectionSlider.scss";
 @import "footer.scss";
@@ -19,7 +20,28 @@ body {
   max-width: 100%;
   font-family: "Gilroy";
   main {
-    overflow: hidden;
+    overflow-x: hidden;
     max-width: 100%;
+    position: relative;
+    padding: 70px 0 800px;
+    @include tablet {
+      padding: 143px 0 1233px;
+    }
+    @include laptop {
+      padding: 113px 0 653px;
+    }
+    @include desktop {
+      padding: 160px 0 921px;
+    }
+  }
+  header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
   }
 }

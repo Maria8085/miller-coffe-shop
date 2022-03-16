@@ -5,4 +5,16 @@
     width: 100%;
     object-fit: cover;
   }
+  @include tablet {
+    width: 225px;
+    height: 102px;
+  }
+  @include laptop {
+    width: 179px;
+    height: 80px;
+  }
+  @include desktop {
+    width: 260px;
+    height: 116px;
+  }
 }
