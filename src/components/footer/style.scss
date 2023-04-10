@@ -1,0 +1,113 @@
+.footer {
+    padding: 159px 122px 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .footerTitle {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 50px;
+      margin-bottom: 50px;
+    }
+    .footerText {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      margin-bottom: 60px;
+      width: 757px;
+      text-align: start;
+    }
+
+    .agreement {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 44px;
+      .agree {
+        color: #f9b300;
+        cursor: pointer;
+      }
+    }
+    .footerImage {
+      position: absolute;
+      right: 665px;
+      top: -50px;
+      .grain {
+        width: 694.18px;
+        height: 478.42px;
+        transform: rotate(163.23deg);
+      }
+      .cup {
+        width: 682px;
+        height: 455px;
+      }
+    }
+    .footerInput {
+      position: relative;
+      input {
+        cursor: pointer;
+        border: none;
+        font-size: 20px;
+        outline: 0;
+        width: 1100px;
+        height: 80px;
+        background: #f3f3f3;
+        border-radius: 40px;
+        padding: 24px 60px;
+      }
+      ::placeholder {
+        color: #c9c9c9;
+      }
+      .inputButton {
+        cursor: pointer;
+        position: absolute;
+        width: 260px;
+        height: 80px;
+        background-color: #f9b300;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        color: #ffffff;
+        border-radius: 40px;
+        border: none;
+        right: 0;
+        transition: all 0.15s ease-out;
+        transform: scale(1);
+        .buttonText{
+          display: block;
+          transition: all 0.15s ease-out;
+        }
+        &:hover{
+          background: #E2A300;
+        }
+        &:active{
+          .buttonText{
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+    .footenMenu {
+      height: 160px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
+      .logo{
+        width: 260px;
+        height: 116px;
+        cursor: pointer;
+        .logoimg{
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .navigation {
+        justify-content: flex-end;
+      }
+    }
+  }
+  

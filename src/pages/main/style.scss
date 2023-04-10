@@ -1,0 +1,52 @@
+.background {
+    position: absolute;
+    top: -255px;
+    right: -670px;
+    width: 1366px;
+    height: 1689.93px;
+    background-image: url("../../media/images/blotch.jpg");
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+  
+  .imageSlider {
+    position: absolute;
+    right: 1020px;
+    top: 155px;
+  }
+  
+  .sectionSlider {
+    min-height: 800px;
+    padding: 120px 122px;
+    position: relative;
+    h2 {
+      font-size: 80px;
+      margin-bottom: 60px;
+      font-style: normal;
+      font-weight: 900;
+    }
+    p {
+      font-size: 25px;
+      margin-bottom: 90px;
+      width: 658px;
+      font-style: normal;
+      font-weight: 500;
+    }
+  
+    .button {
+      width: 400px;
+      height: 80px;
+      left: 122px;
+      top: 658px;
+      color: #ffffff;
+      background: #f9b300;
+      border-radius: 5px;
+      font-size: 30px;
+      border: none;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+  
