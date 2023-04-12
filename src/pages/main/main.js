@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.scss";
 import CupCoffe from "../../ui/cupcoffe/cupcoffe";
+import Catalog from "../../components/catalog/catalog";
 
 function Main() { 
     return (
-        <main>
-      <div class="background"></div>
-      <section class="sectionSlider">
+      <main className="main">
+      <div className="background"></div>
+      <section className="sectionSlider">
         <h2>Свежеобжаренный кофе</h2>
         <p>
             Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.
@@ -14,12 +15,12 @@ function Main() {
         <p>
             Мы обжариваем кофе <strong>каждые выходные</strong>.
         </p>
-        <button class="button">Посмотреть каталог</button>
-        <div class="imageSlider">
+        <button className="button">Посмотреть каталог</button>
+        <div className="imageSlider">
           <CupCoffe/>
         </div>
-        
-      </section>
+        </section>
+        <Catalog/>
     </main>
 );}
 

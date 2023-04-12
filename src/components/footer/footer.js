@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import Navigation from "../../ui/navigation/navigation";
 import CupCoffe from "../../ui/cupcoffe/cupcoffe";
+import { Link } from "react-router-dom";
 
 
 function Footer() { 
@@ -22,9 +23,9 @@ function Footer() {
             </label>
             <p className="agreement">Нажимая на кнопку “Подписаться”, вы принимаете правила <span className="agree">пользовательского соглашения</span></p>
             <div className="footenMenu">
-                <a className="logo" href="#">
+                <Link className="logo" to="/main">
                     <img className="logoimg" src="./image/Logo.jpg" alt=""/>
-                </a>
+                </Link>
                 <Navigation/>
             </div>
         </footer>
