@@ -14,10 +14,11 @@
     background-size: contain;
   }
   
-  .imageSlider {
+  .imageCup {
     position: absolute;
-    right: 1020px;
+    right: 60em;
     top: 155px;
+    z-index: -1;
   }
   
   .sectionSlider {

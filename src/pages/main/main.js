@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import CupCoffe from "../../ui/cupcoffe/cupcoffe";
 import Catalog from "../../components/catalog/catalog";
+import Resale from "../../components/resale/resale";
 
 function Main() { 
     return (
@@ -16,11 +17,12 @@ function Main() {
             Мы обжариваем кофе <strong>каждые выходные</strong>.
         </p>
         <button className="button">Посмотреть каталог</button>
-        <div className="imageSlider">
+        <div className="imageCup">
           <CupCoffe/>
         </div>
         </section>
-        <Catalog/>
+        <Catalog />
+        <Resale />
     </main>
 );}
 
