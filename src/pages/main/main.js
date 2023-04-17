@@ -3,6 +3,7 @@ import "./style.scss";
 import CupCoffe from "../../ui/cupcoffe/cupcoffe";
 import Catalog from "../../components/catalog/catalog";
 import Resale from "../../components/resale/resale";
+import Button from "../../ui/button/button";
 
 function Main() { 
     return (
@@ -16,7 +17,7 @@ function Main() {
         <p>
             Мы обжариваем кофе <strong>каждые выходные</strong>.
         </p>
-        <button className="button">Посмотреть каталог</button>
+        <Button className="sectionSliderButton" size="large">Посмотреть каталог</Button>
         <div className="imageCup">
           <CupCoffe/>
         </div>

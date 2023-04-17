@@ -1,0 +1,109 @@
+.cardCoffee{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(146, 146, 146, 0.25);
+    border-radius: 20px;
+    padding: 21px 38px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .note{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .noteText{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #F9B300;
+            align-self: end;
+        }
+        .volume{
+            .cooseVolume{
+                padding: 6px 17px 6px 30px;
+                background: #FFF7E1;
+                border: 1px solid #F9B300;
+                border-radius: 5px;
+                font-family: 'Gilroy';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
+
+    .info{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        .infoImage{
+            max-width: 172px;
+            height: auto;
+        }
+        .characteristic{
+
+        }
+    }
+
+    .coffeeTitle{
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 10px;
+    }
+
+    .coffeeText{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 8px;
+    }
+
+    .conclusion{
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .price{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .oldPrice{
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+                text-decoration-line: line-through;
+                color: #C6C6C6;
+            }
+            .endPrice{
+                font-weight: 900;
+                font-size: 35px;
+                line-height: 44px;
+                color: #222222;
+            }
+        }
+    }
+}
+
+.cardCoffee.resale{
+    position: relative;
+    &::before{
+        content: "%";
+        width: 70px;
+        height: 70px;
+        background: #F9B300;
+        position: absolute;
+        border-radius: 100%;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        top:-35px;
+        left: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

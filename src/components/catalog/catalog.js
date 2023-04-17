@@ -27,6 +27,7 @@ function Catalog() {
                     <div className="itemButton">Купить</div>
                 </button>
             </div>
+            <div className="background backgroundCatalog"></div>
         </section>
   );
 }

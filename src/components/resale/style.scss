@@ -1,8 +1,8 @@
-.resale{
+.resaleSection{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 45px 122px;
+    padding: 45px 122px 45px 262px;
     .resaleTitle{
         font-weight: 900;
         font-size: 50px;
@@ -15,8 +15,19 @@
         line-height: 130%;
         text-align: right;
         margin-bottom: 80px;
+        max-width: 1107px;
     }
     .resaleItems{
-
+        display: flex;
+        gap:20px;
+        margin-bottom: 58px;
+    }
+    .more{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: right;
+        text-decoration-line: underline;
+        color: #000000;
     }
 }

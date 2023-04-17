@@ -38,27 +38,12 @@
       font-style: normal;
       font-weight: 500;
     }
-  
-    .button {
+
+    .sectionSliderButton{
       width: 400px;
       height: 80px;
       left: 122px;
       top: 658px;
-      color: #ffffff;
-      background: #f9b300;
-      border-radius: 5px;
-      font-size: 30px;
-      border: none;
-      font-style: normal;
-      font-weight: 700;
-      transition: all 0.15s ease-out;
-      transform: scale(1);
-      &:hover{
-        background: #E2A300;
-      }
-      &:active{
-        transform: scale(0.9);
-      }
     }
   }
   

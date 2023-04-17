@@ -1,4 +1,5 @@
 .catalog{
+    position: relative;
     padding: 120px 122px 45px;
     .catalogTitle{
         font-weight: 900;
@@ -75,5 +76,12 @@
                 transform: scale(0.99);
             }
         }
+    }
+    .backgroundCatalog{
+        transform: rotate(175deg);
+        width: 1191px;
+        height: 1348px;
+        left:-705px;
+        top:115px;
     }
 }
