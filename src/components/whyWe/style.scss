@@ -1,0 +1,59 @@
+.whyWe{
+    padding: 58px 262px 100px 122px;
+    display: flex;
+    justify-content: space-between;
+    gap:85px;
+    .whyWeImage{
+        width: 754.81px;
+        height: 600.35px;
+        flex-shrink: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .whyWeInfo{
+        .infoTitle{
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 62px;
+            padding-bottom: 80px;
+        }
+        .infoItem{
+            display: flex;
+            justify-content: flex-start;
+            gap:50px;
+            margin-bottom: 60px;
+            .itemImage{
+                width: 84px;
+                height: 84px;
+                border-radius: 100%;
+                background: #F9B300;
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .itemDerection{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 0;
+                .itemTitle{
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .itemText{
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 130%;
+                }
+            }
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

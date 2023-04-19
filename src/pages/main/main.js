@@ -4,27 +4,35 @@ import CupCoffe from "../../ui/cupcoffe/cupcoffe";
 import Catalog from "../../components/catalog/catalog";
 import Resale from "../../components/resale/resale";
 import Button from "../../ui/button/button";
+import WhyWe from '../../components/whyWe/whyWe'
+import Roasting from '../../components/roasting/roasting'
 
-function Main() { 
-    return (
-      <main className="main">
+function Main() {
+  return (
+    <main className="main">
       <div className="background"></div>
       <section className="sectionSlider">
         <h2>Свежеобжаренный кофе</h2>
         <p>
-            Кофе Калининградской обжарки из разных стран произрастания с доставкой на дом.
+          Кофе Калининградской обжарки из разных стран произрастания с доставкой
+          на дом.
         </p>
         <p>
-            Мы обжариваем кофе <strong>каждые выходные</strong>.
+          Мы обжариваем кофе <strong>каждые выходные</strong>.
         </p>
-        <Button className="sectionSliderButton" size="large">Посмотреть каталог</Button>
+        <Button className="sectionSliderButton" size="large">
+          Посмотреть каталог
+        </Button>
         <div className="imageCup">
-          <CupCoffe/>
+          <CupCoffe />
         </div>
-        </section>
-        <Catalog />
-        <Resale />
+      </section>
+      <Catalog />
+      <Resale />
+      <WhyWe />
+      <Roasting />
     </main>
-);}
+  )
+}
 
 export default Main;

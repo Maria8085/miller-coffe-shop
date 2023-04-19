@@ -1,0 +1,18 @@
+.roasting{
+    padding: 100px 122px;
+    .roastingTitle{
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 62px;
+        margin-bottom: 100px;
+    }
+    .roastingText{
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 130%;
+        margin-bottom: 30px;
+        &:last-of-type{
+            margin-bottom: 100px;
+        }
+    }
+}
