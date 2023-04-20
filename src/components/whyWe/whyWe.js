@@ -4,6 +4,9 @@ import './style.scss'
 function WhyWe() {
   return (
     <section className="whyWe">
+      <div className="whiWeBackConteiner">
+        <div className="whyWeBackground"></div>
+      </div>
       <div className="whyWeImage">
         <img src="../image/Cup_and_seed_coffee.png" alt="" />
       </div>

@@ -1,5 +1,37 @@
 .roasting{
-    padding: 100px 122px;
+    padding: 217px 122px 153px;
+    position: relative;
+    color: #fff;
+    .roastingBackConteiner{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+        .roastingBack{
+            background-image: url("../../media/images/Probat.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: bottom;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            &::after{
+                content: "";
+                    background: url("../../media/images/white_line.png");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 100%;
+                    height: 288px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+            }
+        }
+    }
     .roastingTitle{
         font-weight: 900;
         font-size: 50px;
@@ -11,6 +43,7 @@
         font-size: 25px;
         line-height: 130%;
         margin-bottom: 30px;
+        max-width: 1246px;
         &:last-of-type{
             margin-bottom: 100px;
         }

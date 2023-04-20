@@ -6,6 +6,8 @@ import Resale from "../../components/resale/resale";
 import Button from "../../ui/button/button";
 import WhyWe from '../../components/whyWe/whyWe'
 import Roasting from '../../components/roasting/roasting'
+import News from '../../components/news/news'
+import Social from '../../components/social/social'
 
 function Main() {
   return (
@@ -31,6 +33,8 @@ function Main() {
       <Resale />
       <WhyWe />
       <Roasting />
+      <News />
+      <Social />
     </main>
   )
 }

@@ -30,7 +30,7 @@ function Header() {
             />
           </svg>
         </Link>
-        <Link className="icon" to={router.noPage.path}>
+        <Link className="icon" to={router.basket.path}>
           <svg
             className="iconShop"
             width="37"
@@ -48,7 +48,7 @@ function Header() {
             />
           </svg>
         </Link>
-        <Link className="icon" to={router.noPage.path}>
+        <Link className="icon" to={router.profile.path}>
           <svg
             className="iconProfile"
             width="33"

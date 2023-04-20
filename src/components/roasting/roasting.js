@@ -5,6 +5,9 @@ import Button from '../../ui/button/button'
 function Roasting() {
   return (
     <section className="roasting">
+      <div className="roastingBackConteiner">
+        <div className="roastingBack"></div>
+      </div>
       <h3 className="roastingTitle">Как мы обжариваем наш кофе:</h3>
       <p className="roastingText">
         Компания Нью Рефайнинг Груп находится в г. Калининграде и имеет свой

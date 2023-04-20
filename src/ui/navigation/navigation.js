@@ -14,13 +14,13 @@ function Navigation() {
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? 'itemNav active' : 'itemNav')}
-        to={router.noPage.path}
+        to={router.blog.path}
       >
         Блок
       </NavLink>
       <NavLink
         className={({ isActive }) => (isActive ? 'itemNav active' : 'itemNav')}
-        to={router.noPage.path}
+        to={router.contacts.path}
       >
         Контакты
       </NavLink>
