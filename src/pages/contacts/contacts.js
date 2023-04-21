@@ -4,7 +4,9 @@ import './style.scss'
 function Contacts() {
   return (
     <main className="contacts">
-      <h2>Контакты</h2>
+      <div className="container">
+        <h2>Контакты</h2>
+      </div>
     </main>
   )
 }

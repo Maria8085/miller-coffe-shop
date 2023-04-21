@@ -4,7 +4,9 @@ import './style.scss'
 function Blog() {
   return (
     <main className="blog">
-      <h2>Блог</h2>
+      <div className="container">
+        <h2>Блог</h2>
+      </div>
     </main>
   )
 }

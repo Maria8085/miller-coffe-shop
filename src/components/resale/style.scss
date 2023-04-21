@@ -1,8 +1,13 @@
+@import "/src/styles/mixins";
+
 .resaleSection{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 45px 122px 45px 262px;
+    padding: 45px 0;
+    .container{
+        @include PAGE_CONTAINER;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .resaleTitle{
         font-weight: 900;
         font-size: 50px;

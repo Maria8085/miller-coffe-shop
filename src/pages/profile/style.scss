@@ -1,0 +1,59 @@
+@import "/src/styles/mixins";
+
+.profile{
+    .profileCard{
+        background: $C_WHITE;
+        border: 1px solid #E4E4E4;
+        box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        .personalInfo{
+            padding: 35px;
+            display: flex;
+            justify-content: flex-start;
+            gap:20px;
+        .imageProfile{
+            width: 119px;
+            height: 119px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #E4E4E4;
+            flex-shrink: 0;
+            img{
+                width: 33%;
+                height: 33%;
+            }
+        }
+        .userInfo{
+            display: flex;
+            flex-direction: column;
+        .userName{
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 50px;
+        }
+        .optionalInfo{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    }
+        .personalDiscount{
+            border-radius: 20px;
+            background-color: $C_ORANGE;
+            padding: 50px 60px;
+        }
+    }
+    .buyStory{
+        background: $C_WHITE;;
+border: 1px solid #E4E4E4;
+box-shadow: 0px 0px 50px rgba(163, 163, 163, 0.25);
+border-radius: 20px;
+padding: 35px;
+    }
+}

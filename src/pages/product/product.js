@@ -4,7 +4,9 @@ import './style.scss'
 function Product() {
   return (
     <main className="product">
-      <h2>Карточка товара</h2>
+      <div className="container">
+        <h2>Карточка товара</h2>
+      </div>
     </main>
   )
 }

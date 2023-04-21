@@ -4,7 +4,9 @@ import './style.scss'
 function Tea() {
   return (
     <main className="tea">
-      <h2>Чай и кофейные напитки</h2>
+      <div className="container">
+        <h2>Чай и кофейные напитки</h2>
+      </div>
     </main>
   )
 }

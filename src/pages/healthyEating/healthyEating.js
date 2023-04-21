@@ -4,7 +4,9 @@ import './style.scss'
 function HealthyEating() {
   return (
     <main className="healthyEating">
-      <h2>Здоровое питание</h2>
+      <div className="container">
+        <h2>Здоровое питание</h2>
+      </div>
     </main>
   )
 }

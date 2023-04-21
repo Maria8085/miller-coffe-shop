@@ -1,0 +1,47 @@
+@import "/src/styles/constants";
+
+@mixin DESKTOP {
+    @media (min-width: $M_LAPTOP){
+        @content;
+    }
+}
+@mixin LAPTOP {
+    @media (max-width: $M_LAPTOP ) and (min-width: $M_TABLET){
+        @content;
+    }
+}
+@mixin TABLET {
+    @media (max-width: $M_TABLET)and (min-width: $M_MOBILE){
+        @content;
+    }
+}
+@mixin MOBILE {
+    @media (max-width: $M_MOBILE){
+        @content;
+    }
+}
+
+
+@mixin PAGE_CONTAINER(){
+    max-width: calc( $W_DESKTOP_WIDTH + calc($P_DESKTOP * 2) ) ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: $P_DESKTOP;
+    padding-left: $P_DESKTOP;
+    @include LAPTOP{
+        max-width: calc( $W_LAPTOP_WIDTH + calc($P_LAPTOP * 2) );
+        padding-right: $P_LAPTOP;
+        padding-left: $P_LAPTOP;
+    }
+    @include TABLET{
+        max-width: calc( $W_TABLET_WIDTH + calc($P_TABLET * 2) );
+        padding-right: $P_TABLET;
+        padding-left: $P_TABLET;
+    }
+    @include MOBILE{
+        max-width: calc( $W_MOBILE_WIDTH + calc($P_MOBILE * 2) );
+        padding-right: $P_MOBILE;
+        padding-left: $P_MOBILE;
+    }
+
+}

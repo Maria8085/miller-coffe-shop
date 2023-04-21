@@ -1,3 +1,5 @@
+@import "/src/styles/mixins";
+
 .main{
   position: relative;
 }
@@ -12,7 +14,8 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
-  }
+}
+
   
   .imageCup {
     position: absolute;
@@ -23,8 +26,9 @@
   
   .sectionSlider {
     min-height: 800px;
-    padding: 120px 122px 156px;
     position: relative;
+    padding-top: 70px;
+    padding-bottom: 20px;
     h2 {
       font-size: 80px;
       margin-bottom: 60px;
@@ -45,5 +49,6 @@
       left: 122px;
       top: 658px;
     }
-  }
+  
+}
   

@@ -1,5 +1,7 @@
+@import "/src/styles/mixins";
+
 .roasting{
-    padding: 217px 122px 153px;
+    padding: 217px 0 153px;
     position: relative;
     color: #fff;
     .roastingBackConteiner{
@@ -14,21 +16,22 @@
         .roastingBack{
             background-image: url("../../media/images/Probat.jpg");
             background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: bottom;
+            background-size: cover;
+            background-position: bottom left;
             width: 100%;
             height: 100%;
             position: relative;
             &::after{
                 content: "";
-                    background: url("../../media/images/white_line.png");
-                    background-repeat: no-repeat;
-                    background-size: 100%;
-                    width: 100%;
-                    height: 288px;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
+                background: url("../../media/images/white_line.png");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position-y: bottom;
+                width: 100%;
+                height: 500px;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
             }
         }
     }
